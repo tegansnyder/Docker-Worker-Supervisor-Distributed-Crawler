@@ -1,0 +1,1 @@
+This is the job server container. It runs the Gearman server to farms out work to all the workers containers who have registered with the Gearman server.

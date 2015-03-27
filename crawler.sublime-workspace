@@ -1,0 +1,848 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"gethost",
+				"gethostname"
+			],
+			[
+				"tra",
+				"translation_id"
+			],
+			[
+				"strto",
+				"strtolower"
+			],
+			[
+				"sea",
+				"search_paths"
+			],
+			[
+				"getEx",
+				"getExtensionFullName"
+			],
+			[
+				"ex",
+				"extension_base_dir"
+			],
+			[
+				"exte",
+				"extension_files"
+			],
+			[
+				"untrans",
+				"untranslated_string"
+			],
+			[
+				"Acti",
+				"ActivityListStarredOptions	struct ʈ"
+			],
+			[
+				"Re",
+				"RepositoryListOptions"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"getPopup",
+				"getPopupSubTxt"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"total",
+				"totalRecs"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "# Install boot2docker\n```sh\nbrew install boot2docker\nboot2docker init\nboot2docker up\n```\n\n# Install docker\n```sh\nbrew install docker\nboot2docker start\neval \"$(boot2docker shellinit)\"\ndocker version\n```\n\nlist environmental variables\nenv\n\nDOCKER_HOST=tcp://192.168.59.103:2376\nDOCKER_CERT_PATH=/Users/teg/.boot2docker/certs/boot2docker-vm\nexport=\nDOCKER_TLS_VERIFY=1\n\n\nhttps://docs.docker.com/installation/mac/",
+			"settings":
+			{
+				"buffer_size": 408,
+				"line_ending": "Unix",
+				"name": "# Install boot2docker"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 203.0,
+		"last_filter": "insta",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove p",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 435.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/teg/Dev/gits/DockerCrawler"
+	],
+	"file_history":
+	[
+		"/Users/teg/Dev/gits/US/modman",
+		"/private/var/www/sov/query.log",
+		"/private/var/www/Greenbooks/query.log",
+		"/private/var/www/sov/.gitignore",
+		"/Users/teg/Desktop/clients/3m/TrueDef/US/pdp-changes.txt",
+		"/private/var/www/sov/routes.php",
+		"/private/var/www/sov/code/Domains.php",
+		"/private/var/www/sov/views/domain/view.html",
+		"/private/var/www/sov/views/blocks/js/dataview_table_child_rows.html",
+		"/private/var/www/sov/views/keywords/view.html",
+		"/private/var/www/sov/skin/scss/framework/view/_view_keyword.scss",
+		"/private/var/www/sov/code/Keywords.php",
+		"/private/var/www/sov/skin/scss/framework/datatables/_datatables-global.scss",
+		"/private/var/www/sov/sov.sublime-project",
+		"/Users/teg/Desktop/clients/mitzik/rebranded-2014/www.mitzik.com/about.html",
+		"/private/var/www/greenbooks/code/S01Record.php",
+		"/private/var/www/Greenbooks/code/MailFiles.php",
+		"/private/var/www/Greenbooks/config.php",
+		"/private/var/www/Lohaco/crawl_gsc.php",
+		"/private/var/www/Greenbooks/code/Common.php",
+		"/private/var/www/RakutenCrawler/crawl2.php",
+		"/Users/teg/Desktop/eStoreS01.txt",
+		"/Users/teg/Desktop/eStoreT01.txt",
+		"/Users/teg/Desktop/clients/3m/Columbia/OFAC Example/notes.txt",
+		"/private/var/www/Greenbooks/code/T01Record.php",
+		"/Users/teg/Desktop/WDSR_periods/2-2_through_2-8/eStoreS01.txt",
+		"/Users/teg/Desktop/clients/3m/sha2/dev/star_mmm_com.cer",
+		"/Users/teg/Desktop/clients/3m/sha2/dev/star_bundle_mmm_com.cer",
+		"/Users/teg/Desktop/clients/3m/sha2/dev/star_mmm_com_interm.cer",
+		"/private/var/www/RakutenCrawler/catcrawl.php",
+		"/private/var/www/greenbooks/code/T01Record.php",
+		"/private/var/www/greenbooks/code/G03Record.php",
+		"/private/var/www/greenbooks/code/G01Record.php",
+		"/private/var/www/greenbooks/WDSR/generate-flat-files/export-batch.php",
+		"/Users/teg/Desktop/clivas-notes.txt",
+		"/private/var/www/greenbooks/code/Common.php",
+		"/private/var/www/greenbooks/WDSR/generate-flat-files/export-orders.php",
+		"/private/var/www/Greenbooks/.gitignore",
+		"/private/var/www/Greenbooks/README.md",
+		"/private/var/www/greenbooks/historic/flat/custom_range_20150202-20150208_generated_at_06-03-2015-eStoreT01.txt",
+		"/private/var/www/greenbooks/historic/flat/custom_range_20150202-20150208_generated_at_06-03-2015-eStoreS01.txt",
+		"/private/var/www/greenbooks/historic/flat/custom_range_20150202-20150208_generated_at_05-03-2015-eStoreT01.txt",
+		"/private/var/www/greenbooks/historic/flat/custom_range_20150202-20150208_generated_at_05-03-2015-eStoreS01.txt",
+		"/private/var/www/greenbooks/historic/flat/custom_range_20150202-20150208_generated_at_05-03-2015-eStoreG03.txt",
+		"/private/var/www/greenbooks/historic/flat/custom_range_20150202-20150208_generated_at_06-03-2015-eStoreG01.txt",
+		"/private/var/www/greenbooks/historic/flat/custom_range_20150202-20150208_generated_at_05-03-2015-eStoreG01.txt",
+		"/private/var/www/RakutenCrawler/l2_l3.csv",
+		"/private/var/www/greenbooks/query.log",
+		"/private/var/www/RakutenCrawler/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/AbstractNode.php",
+		"/private/var/www/RakutenCrawler/vendor/paquettg/php-html-parser/src/PHPHtmlParser/Dom/HtmlNode.php",
+		"/private/var/www/greenbooks/code/MailFiles.php",
+		"/private/var/www/greenbooks/config.php",
+		"/private/var/www/greenbooks/generate.php",
+		"/Users/teg/sitemap01.xml",
+		"/private/var/www/greenbooks/historic/flat/05-03-2015-eStoreS01.txt",
+		"/private/var/www/Kaunet/crawl.php",
+		"/private/var/www/Kaunet/.gitignore",
+		"/private/var/www/Kaunet/d.csv",
+		"/private/var/www/Kaunet/composer.json",
+		"/private/var/www/sov/views/sidebar.html",
+		"/private/var/www/sov/views/campaign/view.html",
+		"/private/var/www/sov/views/campaign/edit.html",
+		"/private/var/www/sov/views/domain/attributes/list.html",
+		"/private/var/www/sov/skin/scss/framework/list/_domains_attributes.scss",
+		"/private/var/www/sov/skin/scss/framework/edit/_edit_campaign.scss",
+		"/private/var/www/sov/views/campaign/create.html",
+		"/private/var/www/sov/views/campaign/success.html",
+		"/private/var/www/sov/views/campaign/processing.html",
+		"/private/var/www/sov/views/campaign/list.html",
+		"/private/var/www/sov/skin/scss/_layout.scss",
+		"/private/var/www/sov/auth.php",
+		"/private/var/www/MonotaCrawler/composer.json",
+		"/private/var/www/Trusco/crawl.php",
+		"/private/var/www/sovcrawler/composer.json",
+		"/private/var/www/Trusco/brands.csv",
+		"/private/var/www/sov/code/Import.php",
+		"/private/var/www/Trusco/.gitignore",
+		"/private/var/www/Trusco/composer.json",
+		"/Users/teg/Dev/gits/php-html-parser/src/PHPHtmlParser/Dom/Tag.php",
+		"/private/var/www/RakutenCrawler/d.txt",
+		"/private/var/www/RakutenCrawler/d.csv",
+		"/private/var/www/RakutenCrawler/clean.php",
+		"/Users/teg/Downloads/php/web/payment_form.js",
+		"/Users/teg/Dev/gits/curl/lib/veqryn/Curl/Curl.php",
+		"/private/var/www/RakutenCrawler/crawl5.php",
+		"/private/var/www/RakutenCrawler/crawl6.php",
+		"/Users/teg/Downloads/php/web/payment_form.php",
+		"/Users/teg/Desktop/clients/mitzik/rebranded-2014/www.mitzik.com/index.html",
+		"/Users/teg/Desktop/clients/mitzik/rebranded-2014/www.mitzik.com/services.html",
+		"/Users/teg/Desktop/test.php",
+		"/private/var/www/beep/us/htdocs/skin/frontend/rwd/global-base/fuze/js/src/views/BackdropView.js",
+		"/private/var/www/beep/us/htdocs/skin/frontend/rwd/us/fuze/js/mmmSettings.js",
+		"/private/var/www/RakutenCrawler/pdp_pages.csv",
+		"/private/var/www/Lohaco/crawl.php",
+		"/private/var/www/RakutenCrawler/crawl4.php",
+		"/private/var/www/RakutenCrawler/crawl3.php",
+		"/private/var/www/ASKUL/crawl.php",
+		"/private/var/www/ASKUL/fix.sh",
+		"/private/var/www/sov/code/Auth.php",
+		"/private/var/www/MonotaCrawler/crawl.php",
+		"/private/var/www/ASKUL/.gitignore",
+		"/Users/teg/Dev/gits/php-html-parser/src/PHPHtmlParser/Options.php",
+		"/Users/teg/Dev/gits/php-html-parser/src/PHPHtmlParser/Dom/TextNode.php",
+		"/Users/teg/Dev/gits/php-html-parser/src/PHPHtmlParser/Dom.php",
+		"/private/var/www/Lohaco/.gitignore",
+		"/private/var/www/MonotaCrawler/vendor/paquettg/string-encode/src/stringEncode/Encode.php",
+		"/private/var/www/ASKUL/vendor/paquettg/string-encode/src/stringEncode/Encode.php",
+		"/private/var/www/MonotaCrawler/.gitignore",
+		"/private/var/www/Lohaco/composer.json",
+		"/private/var/www/ASKUL/composer.json",
+		"/private/var/www/MonotaCrawler/t.csv",
+		"/private/var/www/MonotaCrawler/results.csv",
+		"/private/var/www/MonotaCrawler/MonotaRO_Crawl.csv",
+		"/private/var/www/sov/code/Sov.php",
+		"/private/var/www/RakutenCrawler/cnt.php",
+		"/private/var/www/RakutenCrawler/pivot.php",
+		"/Users/teg/Downloads/Cfg_USB_Loader_70/inSDRoot/apps/USBLoader/meta.xml",
+		"/Users/teg/Dev/greenbooks/code/MailFiles.php",
+		"/private/var/www/RakutenCrawler/top_cnts.csv",
+		"/Users/teg/Downloads/IOS236_Installer_v6/readme.txt",
+		"/Volumes/WII/apps/usbloader_gx/meta.xml",
+		"/Users/teg/Downloads/13015-Multi-Mod-Manager_v13.4/readme.txt",
+		"/Users/teg/Downloads/USBLoader_GX_V3_0_AllinOnePackage_IOS249/readme.txt",
+		"/Users/teg/Downloads/hackmii_installer_v1.2/README.txt",
+		"/private/var/www/RakutenCrawler/counts.csv",
+		"/private/var/www/RakutenCrawler/p.csv",
+		"/private/var/www/beep/au/htdocs/lib/Zend/Controller/Response/Http.php",
+		"/private/var/www/RakutenCrawler/composer.json"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/private/var/www/sov/skin/scss",
+			"/private/var/www/Greenbooks/WDSR",
+			"/private/var/www/greenbooks/code",
+			"/private/var/www/greenbooks/WDSR/generate-flat-files",
+			"/private/var/www/RakutenCrawler/vendor/paquettg/php-html-parser/src/PHPHtmlParser",
+			"/private/var/www/RakutenCrawler/vendor/paquettg/php-html-parser",
+			"/private/var/www/sov/code",
+			"/private/var/www/sov",
+			"/Users/teg/Dev/gits/php-html-parser/src/PHPHtmlParser",
+			"/Users/teg/Dev/gits/php-html-parser",
+			"/Users/teg/Dev/gits/php-html-parser/src",
+			"/Users/teg/Dev/gits/curl/lib/veqryn/Curl",
+			"/private/var/www/ASKUL/vendor/paquettg",
+			"/private/var/www/beep/au/htdocs/lib",
+			"/private/var/www/beep/au/htdocs/app/code/core",
+			"/private/var/www/RakutenCrawler/vendor/veqryn",
+			"/private/var/www/sov/views",
+			"/private/var/www/sov/code",
+			"/private/var/www/sov/views",
+			"/Users/teg/Dev/gits/magento-legacy-orders/app",
+			"/private/var/www/sov/skin",
+			"/private/var/www/sov/skin/js",
+			"/private/var/www/sov/skin",
+			"/private/var/www/sovcrawler/vendor/paquettg/php-html-parser/src/PHPHtmlParser",
+			"/private/var/www/sovcrawler/vendor/paquettg/php-html-parser",
+			"/private/var/www/sovcrawler/vendor",
+			"/private/var/www/sovcrawler/vendor/paquettg/php-html-parser/src",
+			"/private/var/www/sov",
+			"/private/var/www/sov/shell",
+			"/private/var/www/sov/code",
+			"/private/var/www/sovcrawler/vendor/cuab/phpcrawl",
+			"/private/var/www/sovcrawler/vendor/cuab",
+			"/private/var/www/sov/views",
+			"/private/var/www/sov/views/blocks",
+			"/private/var/www/sov/skin",
+			"/private/var/www/sov/vendor/twig/twig",
+			"/private/var/www/sov",
+			"/private/var/www/sov/skin/static_components",
+			"/private/var/www/sov",
+			"/private/var/www/sov/skin",
+			"/private/var/www/sov",
+			"/Users/teg/Dev/gits/global-base/app/code",
+			"/Users/teg/Dev/gits/global-base/app/code/core/Mage/Core",
+			"/Users/teg/Dev/gits/global-base/app/code/core",
+			"/private/var/www/sov/skin/bower_components/DataTables/media/css",
+			"/private/var/www/sov/skin/bower_components/DataTables/media/js",
+			"/private/var/www/sov/skin/bower_components/DataTables/media/css",
+			"/private/var/www/beep/us/htdocs/app/code/community/Aligent",
+			"/Users/teg/Dev/gits/Aligent_Feeds/app/code/community/Aligent/Feeds",
+			"/Users/teg/Dev/gits/Aligent_Feeds/app/code/community",
+			"/Users/teg/Dev/gits/Aligent_Feeds/app/code/community/Aligent",
+			"/Users/teg/Dev/gits/Aligent_Feeds/app/code/community",
+			"/Users/teg/Dev/greenbooks/new",
+			"/Users/teg/Dev/greenbooks/new/generate-flat-files",
+			"/private/var/www/beep/us/modman/app/code",
+			"/private/var/www/beep/truedef",
+			"/private/var/www/beep/truedef/modman",
+			"/private/var/www/beep/us/htdocs",
+			"/Users/teg/Dev/gits/magento-legacy-orders/app",
+			"/Users/teg/Dev/gits/US/app/code/community/Mmm/Omx",
+			"/Users/teg/Dev/gits/magento-legacy-orders",
+			"/private/var/www/beep/us/htdocs/app/design/frontend/rwd/enterprise/layout",
+			"/private/var/www/beep/us/htdocs/app/design/frontend/rwd/global-base",
+			"/private/var/www/beep/us/htdocs/app/design/frontend/rwd/us",
+			"/Users/teg/Dev/gits/global-base/app/design/frontend/rwd/global-base/layout/globalbase",
+			"/Users/teg/Dev/gits/global-base/app/design/frontend/rwd/global-base/template/page/html",
+			"/Users/teg/Dev/gits/US/app/code/community/Omx",
+			"/Users/teg/Dev/gits/global-base/app/locale",
+			"/Users/teg/Dev/gits/global-base/app/locale/es_ES",
+			"/Users/teg/Dev/gits/global-base/skin/frontend/base/default/aw_layerednavigation",
+			"/Users/teg/Dev/gits/global-base/skin/frontend/rwd/global-base/aw_layerednavigation/js",
+			"/Users/teg/Dev/gits/global-base/app/code/local/AW",
+			"/Users/teg/Desktop/clients/www.bulubox.com",
+			"/private/var/www/beep_fuze/app/code/community/OnePica/Catalog",
+			"/private/var/www/beep_fuze/app/design/frontend",
+			"/private/var/www/beep_fuze/app/design/frontend/rwd/global-base",
+			"/private/var/www/beep_fuze/app/code/community",
+			"/private/var/www/beep_fuze/app/design/frontend/rwd",
+			"/Users/teg/Dev/gits/Gulf-upgrade-temp/foresee/en_AE/FUZE",
+			"/Users/teg/Dev/gits/global-base/app",
+			"/Users/teg/Dev/gits/global-base/app/code/core",
+			"/Users/teg/Dev/gits/TrueDef",
+			"/private/var/www/beep_fuze/app/code/community/Tegdesign",
+			"/Users/teg/Dev/gits/TrueDef/app/design/frontend/rwd",
+			"/Users/teg/Dev/gits/TrueDef",
+			"/private/var/www/beep_fuze",
+			"/Users/teg/Dev/gits/TrueDef/app/design/frontend/rwd/truedef-base/locale",
+			"/Users/teg/Dev/gits/global-base/app/locale/nl_NL",
+			"/private/var/www/beep_fuze/app/locale/en_US",
+			"/private/var/www/beep_fuze",
+			"/private/var/www/beep_fuze/lib",
+			"/private/var/www/beep_fuze/app",
+			"/Users/teg/Dev/gits/TrueDef/app/design/frontend/rwd/truedef-base/locale",
+			"/Users/teg/Dev/gits/global-base/app/locale",
+			"/Users/teg/Dev/gits/global-base/app",
+			"/Users/teg/Dev/gits/global-base/app/locale",
+			"/Users/teg/Dev/gits/global-base",
+			"/private/var/www/truedef/.modman/TrueDef",
+			"/private/var/www/beep_fuze",
+			"/private/var/www/beep_fuze/app/code/core/Mage/Catalog",
+			"/private/var/www/beep_fuze/app/code/core/Mage/Catalog/Block/Product/View",
+			"/Users/teg/Dev/gits/TrueDef/app/design/frontend/rwd/truedef-base/locale",
+			"/private/var/www/beep_fuze/app/code/core/Mage/Index",
+			"/Users/teg/Dev/gits/AU/app/code/community/Ess/M2ePro",
+			"/Users/teg/Dev/gits/EU/app/design/frontend/rwd",
+			"/Users/teg/Dev/gits/EU/app/design/frontend/rwd/es",
+			"/Users/teg/Dev/gits/TrueDef/app/design/frontend/rwd",
+			"/Users/teg/Dev/gits/TrueDef/app/design/frontend/rwd/truedef-base",
+			"/private/var/www/beep_fuze/app/code/local/AW/Layerednavigation",
+			"/private/var/www/beep_fuze/app",
+			"/private/var/www/beep_fuze/app/code/community/Cybersource/PaymentManagement",
+			"/private/var/www/beep_fuze/app/design/frontend/base/default/layout",
+			"/private/var/www/beep_fuze/app/design/frontend",
+			"/private/var/www/beep_fuze/app",
+			"/private/var/www/beep_fuze/app/design",
+			"/private/var/www/beep_fuze/app/design/frontend/base/default/layout",
+			"/private/var/www/beep_fuze/app",
+			"/private/var/www/beep_fuze/app/code/core",
+			"/private/var/www/beep_fuze/app/design/frontend",
+			"/private/var/www/beep_fuze/app/design/adminhtml",
+			"/private/var/www/beep_fuze/lib",
+			"/private/var/www/beep_fuze/app/code/core",
+			"/private/var/www/beep_fuze/app",
+			"/private/var/www/beep_fuze/app/code/community",
+			"/private/var/www/beep_fuze",
+			"/private/var/www/beep_fuze/app",
+			"/private/var/www/beep_fuze/app/code/community",
+			"/private/var/www/beep_fuze/app/code/community/Aoe/Scheduler"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"app/etc/modules/Netzarbeiter_CustomerActivation.xml",
+			"Net",
+			"/us/",
+			"us",
+			"sov_keywords_info_header ",
+			"sov_keywords_info_header_trans",
+			"sov_keywords_info_subhead",
+			"findKeywordTranslationId",
+			"findKeywordTranslation",
+			"info",
+			"keyword_group",
+			"/domain/view",
+			"keywords",
+			"trans",
+			"keywords']",
+			"projects",
+			"domain/vi",
+			"getMatchingAttributePairTypeId",
+			"getMatchingAttr",
+			"domain/attributes/list",
+			"$\\n",
+			"^",
+			"	Katrin Dierdorf	Test	Deleted in Cyberource",
+			"ann",
+			"910",
+			"search",
+			"searchp",
+			"getProducts",
+			"csv_row",
+			"$x",
+			"outputProducts",
+			"getProducts",
+			"SFQCF",
+			"SFQU",
+			"BCUC",
+			"GSC",
+			"ITLI",
+			"STLI",
+			"STLQC",
+			"grand_total",
+			"  [\"",
+			"\"] =&gt; string(",
+			"&quot;",
+			"trans",
+			"XjY+ScoLTc8LIG3QrAnUcDkQ9JynFMbZ7p9A5yyqbR5n5DViU0R3gjNgbrIVHSYd",
+			"OM-XML-historic",
+			"num_",
+			"numR",
+			"$numRows =",
+			"numRows",
+			"now",
+			"date(",
+			"Time",
+			"export-orders",
+			"YmdHis",
+			"now",
+			"firstChild",
+			"children",
+			"firstChild",
+			"$file =",
+			"$file",
+			"if_c",
+			"$file =",
+			"$file",
+			"OUTPUT_FILE",
+			"where",
+			"^[ \\t]*$\\r?\\n",
+			"\\r\\n",
+			"\\n",
+			"^[http://www.kaunet.com/rakuraku/variation/;].*",
+			"echo",
+			"nextp",
+			"ech",
+			"outputProducts",
+			"getNextPage",
+			"getProductData",
+			"outPut",
+			"get",
+			"nextPage",
+			"iconv",
+			"getProductData",
+			"getProducts",
+			"domain/attributes/list",
+			"attributes/l",
+			"todo",
+			"sov_id",
+			"owner_id",
+			"todo",
+			"session",
+			"user",
+			"attributes/list",
+			"projects'",
+			"projects",
+			"post",
+			"domains_attribution",
+			"Import",
+			"success",
+			"getAttribute",
+			"getNextPage",
+			"next",
+			"getProducts",
+			"crawl_next",
+			"getNextPage",
+			"get",
+			"get(",
+			"get",
+			"getProducts",
+			"getNextPage",
+			"getProductData",
+			"mime",
+			"getProd",
+			"getProductData",
+			"getProducts",
+			"outputProd",
+			"outputProducts",
+			"getProducts",
+			"process",
+			"card_number",
+			"MMM--backdrop",
+			"BackdropView",
+			"BackdropView.prototype.layout",
+			"setPageJS",
+			"IS_PRODUCTION",
+			"3800638006",
+			"3800638006 1本(473mL)",
+			"3800638006",
+			"スリーエム(3M) クリーナーワックス 3800638006 1本(473mL)",
+			",\""
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"/truedef/",
+			"truedef",
+			"',",
+			"'",
+			"",
+			"=",
+			"\"",
+			"",
+			"\\n",
+			"link",
+			"urls[]",
+			";",
+			"'",
+			"$url[] = '",
+			"\"",
+			"",
+			"\"3",
+			"\"2",
+			"\"1",
+			"\"",
+			"",
+			"qa",
+			"p.10",
+			"-st.A",
+			"http://search.rakuten.co.jp/search/inshop-mall/スリーエム/-/sid.",
+			"-st.A",
+			"http://search.rakuten.co.jp/search/inshop-mall/スリーエム/-/sid.",
+			"'",
+			"self::ITLI",
+			"self::ITLQC",
+			"self::SLQC",
+			"self::TPLCP",
+			"self::TPLQC",
+			"self::DRLI",
+			"self::DRLQC",
+			"self::DSLI",
+			"self::DSLQC",
+			"self::NIL",
+			"$this->noDecimalData",
+			"$this->textData",
+			"$item",
+			"self::SOC",
+			"self::ITLQC",
+			"self::NIL",
+			"Data(self::D",
+			"$this->noDecimalData",
+			"$this->textData",
+			"$item",
+			"self::NIL",
+			"self::",
+			"=$this->textData",
+			"=$this->noDecimalData",
+			"self::$nil",
+			"$item",
+			"'",
+			"",
+			"$tmp",
+			"'] = ;",
+			"$sov_data[$d['keyword_id']]['",
+			"",
+			"$sov_data",
+			"',",
+			"th",
+			">",
+			"_",
+			"",
+			" /",
+			"Redirect 301 ",
+			"/",
+			"",
+			"http://www.shop3m.com",
+			" /",
+			"Redirect 301 ",
+			"$",
+			"cp ",
+			" /",
+			" Redirect 301",
+			" ",
+			"",
+			"\\n",
+			"; \\n",
+			";\\n",
+			" /",
+			"Redirect 301 ",
+			" ",
+			"Redirect 301 ",
+			"Redirect 301",
+			"",
+			",http://",
+			"(.*?),http",
+			"$,http",
+			",http",
+			"http://www.shop3m.com/",
+			"",
+			"wget ",
+			"beepdev-us2.mmm.com",
+			"wget ",
+			"beepdev-us2.mmm.com",
+			"",
+			"','",
+			",",
+			"','",
+			"',",
+			",",
+			"",
+			",",
+			"",
+			"\\n",
+			",",
+			"\\n",
+			"tegdesign",
+			"tegdesign.com",
+			"Tegdesign",
+			"\"",
+			"",
+			"getElementValue($xml, ",
+			"$",
+			"$helper->getElementValue",
+			" start",
+			"sudo sh ./",
+			"\\n",
+			"",
+			"wget ",
+			"http://beepdev-us.mmm.com/tmp/",
+			".dev",
+			";",
+			"DROP DATABASE ",
+			"wget http://beepdev01.mmm.com/orchestration/solr/ee141/syno"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 408,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								197,
+								197
+							]
+						],
+						"settings":
+						{
+							"auto_name": "# Install boot2docker",
+							"incomplete_sync": null,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.GoSublime-main-output":
+	{
+		"height": 124.0
+	},
+	"output.MarGo-output":
+	{
+		"height": 124.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 112.0
+	},
+	"output.xdebug":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "crawler.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 286.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,1 @@
+This container is going to run either MongoDB or Percona and store the results of parsed data collected by the workers.

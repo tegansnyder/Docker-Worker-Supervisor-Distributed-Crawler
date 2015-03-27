@@ -1,0 +1,1 @@
+This is the supervisor container. It runs Redis and a PHP shell script that figures out which URL to crawl next, which it then sends to the Gearman server.
