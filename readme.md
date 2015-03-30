@@ -1,3 +1,5 @@
+> NOTE: this is a work in progress repository that I'm using as a learning curve for setting up a micro service based workflow for distributed crawling. All my testing is being done on OSX with boot2docker.
+
 This is a example of creating a worker supervisor architecture to crawl the web using docker containers.
 
 * The "Supervisor" docker container runs Redis and a PHP shell script that figures out which URL to crawl next, which it then sends to the Gearman server.
@@ -17,5 +19,9 @@ $(boot2docker shellinit)
 ```
 
 Once boot2docker has finished loading you can now run any of the "docker" commands.
+
+
+Some useful boot2docker info on OSX:
+http://viget.com/extend/how-to-use-docker-on-os-x-the-missing-guide
 
 
