@@ -12,6 +12,8 @@ https://docs.docker.com/installation/mac/
 Then turn on boot2docker:
 ```sh
 boot2docker start
+# if you haven't already setup the env variables run
+$(boot2docker shellinit)
 ```
 
 Once boot2docker has finished loading you can now run any of the "docker" commands.
