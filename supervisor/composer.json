@@ -1,0 +1,7 @@
+{
+    "name" : "worker/supervisor",
+    "description" : "Supervisor",
+    "require": {
+        "sinergi/gearman": "dev-master"
+    }
+}

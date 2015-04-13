@@ -24,4 +24,5 @@ Once boot2docker has finished loading you can now run any of the "docker" comman
 Some useful boot2docker info on OSX:
 http://viget.com/extend/how-to-use-docker-on-os-x-the-missing-guide
 
+Issue you have issues connecting with VirtualBox on OSX you can try adding some port forwarding in VirtaulBox details here: https://github.com/boot2docker/boot2docker/issues/392#issuecomment-66694197
 

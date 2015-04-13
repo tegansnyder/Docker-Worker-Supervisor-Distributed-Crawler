@@ -10,3 +10,6 @@ Run the container:
 ```sh
 docker run -it --rm --name worker worker php worker.php
 ``
+
+Check the status of the container:
+docker logs $(docker ps | grep worker | awk '{ print $1 }')

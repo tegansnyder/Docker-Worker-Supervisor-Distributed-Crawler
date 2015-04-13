@@ -10,6 +10,7 @@
     "require": {
         "veqryn/curl": "*",
         "paquettg/php-html-parser": "dev-master",
-        "stichoza/google-translate-php": "~2.0"
+        "stichoza/google-translate-php": "~2.0",
+        "sinergi/gearman": "dev-master"
     }
 }

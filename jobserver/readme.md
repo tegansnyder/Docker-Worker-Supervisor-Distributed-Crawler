@@ -5,10 +5,11 @@ To build this container:
 docker build -t jobserver .
 ```
 
-Run the container:
+Run the container (standalone).
 ```sh
 docker run -d -p 4730 --name jobserver jobserver
 ```
+
 
 ### To get all of the command line options:
 ```sh
@@ -32,7 +33,11 @@ boot2docker ip
 ```
 Then you can test via telnet:
 ```sh
-telent 192.168.59.103 49153
+telnet 192.168.59.103 49153
 # try a command
 version
 ```
+
+
+#### Starting stoping
+If your container is stoped it will not show up in `docker ps`. You can issue a all paramter to show all containers regardless of status `docker ps -a` then you can restart it by issuing `docker start CONTAINER_ID`
