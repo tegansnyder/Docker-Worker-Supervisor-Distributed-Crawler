@@ -9,8 +9,12 @@ docker build -t supervisor .
 To run:
 ```sh
 
-# this container is linked to the jobserver
-docker run -d -P --name supervisor --link jobserver:jobserver supervisor
+# this container is linked to the jobserver and database server
+# make sure they are both started first then run
+
+docker run -d -P --name supervisor --link jobserver:jobserver --link database:database supervisor
+
+
 
 # you can verify the supervisor container is linked to the jobserver container by running:
 

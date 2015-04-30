@@ -2,7 +2,8 @@
     "name" : "worker/supervisor",
     "description" : "Supervisor",
     "require": {
-        "sinergi/gearman": "dev-master"
+        "sinergi/gearman": "dev-master",
+        "j4mie/idiorm": "1.5.1"
     },
     "autoload": {
         "psr-4": {

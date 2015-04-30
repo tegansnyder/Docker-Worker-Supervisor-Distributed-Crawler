@@ -9,9 +9,10 @@ RUN echo "deb http://ppa.launchpad.net/ondrej/php5-5.6/ubuntu trusty main" >> /e
     apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key E5267A6C && \
     apt-get update
 
-RUN apt-get install -y telnet redis-server git supervisor \
+RUN apt-get install -y telnet \
+	redis-server mysql-client git supervisor \
 	php5 php5-cli php5-common \
-	php-pear php5-dev \
+	php-pear php5-dev php5-mysql \
 	php5-curl php5-redis php5-intl \
 	php5-gearman unicode curl && \
 	apt-get purge -y aptitude && \
@@ -42,8 +43,8 @@ COPY composer.json /var/crawler/
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 RUN cd /var/crawler && composer install
 
-# Expose Redis Port
-EXPOSE 6379
+# Expose Redis port and Supervisor web admin
+EXPOSE 6379 9001
 
 # Start supervisor
 CMD /usr/bin/supervisord -n -c /etc/supervisor/supervisord.conf

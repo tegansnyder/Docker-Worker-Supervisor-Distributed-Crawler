@@ -15,5 +15,12 @@ docker run -d -P --name worker --link jobserver:jobserver worker
 
 ``
 
-Check the status of the container:
+### Check the status of the container:
 docker logs $(docker ps | grep worker | awk '{ print $1 }')
+
+
+### Testing
+To test connectivity between containers you can open a bash terminal from the container by calling it using the `docker exec` command:
+```sh
+docker exec -t -i worker bash -l
+```

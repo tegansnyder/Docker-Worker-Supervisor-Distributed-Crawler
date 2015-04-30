@@ -36,23 +36,30 @@ sudo sh vpn_fix.sh
 ### Running this
 As of right now this is an attempt at creating a microservices based crawling operation using docker and there is mistakes committed and best practices ommited as I'm learning as I go. Please don't run this until I take this notice away.
 
-1. Start Job Server
+1. Start Database
+2. Start Job Server
  - docker run -d -p 4730 --name jobserver jobserver
-2. Start Supervisor Server
- - docker run -d -P --name supervisor --link jobserver:jobserver supervisor
-3. Start Database
+3. Start Supervisor Server
+ - docker run -d -P --name supervisor --link jobserver:jobserver --link database:database supervisor
 4. Start Workers
  - docker run -d -P --name worker --link jobserver:jobserver worker
 
 
 ```sh
 cd ~/Dev/gits/DockerCrawler
+cd database
+docker run -d -p 3306 --name database database
+cd ../
 cd jobserver
 docker run -d -p 4730 --name jobserver jobserver
 cd ../
 cd supervisor
-docker run -d -P --name supervisor --link jobserver:jobserver supervisor
+docker run -d -P --name supervisor --link jobserver:jobserver --link database:database supervisor
 cd ../
 cd worker
 docker run -d -P --name worker --link jobserver:jobserver worker
 ```
+
+
+> NOTE: look into Amabassador:
+http://www.centurylinklabs.com/deploying-multi-server-docker-apps-with-ambassadors/

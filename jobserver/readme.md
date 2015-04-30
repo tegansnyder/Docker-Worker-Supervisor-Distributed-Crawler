@@ -16,6 +16,12 @@ docker run -d -p 4730 --name jobserver jobserver
 docker run --rm jobserver -h
 ```
 
+### Testing
+To test connectivity between containers you can open a bash terminal from the container by calling it using the `docker exec` command:
+```sh
+docker exec -t -i jobserver bash -l
+```
+
 ### To test the connection on OSX using boot2docker:
 Since Boot2Docker is a VM in between your host and Docker you need to use the ip address of boot2docker and the random port shown when you type `docker ps` for the container port forwarding.
 
