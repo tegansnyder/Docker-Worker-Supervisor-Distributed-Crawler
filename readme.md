@@ -24,5 +24,35 @@ Once boot2docker has finished loading you can now run any of the "docker" comman
 Some useful boot2docker info on OSX:
 http://viget.com/extend/how-to-use-docker-on-os-x-the-missing-guide
 
-Issue you have issues connecting with VirtualBox on OSX you can try adding some port forwarding in VirtaulBox details here: https://github.com/boot2docker/boot2docker/issues/392#issuecomment-66694197
 
+### Cisco VPN AnyConnect issues
+```sh
+sudo sh vpn_fix.sh
+# https://gist.github.com/christian-blades-cb/16e8ae55697ae65b5318
+# https://github.com/boot2docker/boot2docker/issues/392#issuecomment-66694197
+```
+
+
+### Running this
+As of right now this is an attempt at creating a microservices based crawling operation using docker and there is mistakes committed and best practices ommited as I'm learning as I go. Please don't run this until I take this notice away.
+
+1. Start Job Server
+ - docker run -d -p 4730 --name jobserver jobserver
+2. Start Supervisor Server
+ - docker run -d -P --name supervisor --link jobserver:jobserver supervisor
+3. Start Database
+4. Start Workers
+ - docker run -d -P --name worker --link jobserver:jobserver worker
+
+
+```sh
+cd ~/Dev/gits/DockerCrawler
+cd jobserver
+docker run -d -p 4730 --name jobserver jobserver
+cd ../
+cd supervisor
+docker run -d -P --name supervisor --link jobserver:jobserver supervisor
+cd ../
+cd worker
+docker run -d -P --name worker --link jobserver:jobserver worker
+```

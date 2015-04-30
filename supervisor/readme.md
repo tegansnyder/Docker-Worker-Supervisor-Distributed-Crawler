@@ -54,3 +54,35 @@ To test connectivity between containers you can open a bash terminal from the co
 ```sh
 docker exec -t -i supervisor bash -l
 ```
+
+To verify the proper environmental variables have been set after linking the supervisor to the job server you can use `docker exec` then type:
+```sh
+env
+```
+You will see a list like this:
+```
+root@33b9ddeb25ea:/opt# env
+HOSTNAME=33b9ddeb25ea
+JOBSERVER_PORT_4730_TCP_ADDR=172.17.0.21
+JOBSERVER_PORT_4730_TCP=tcp://172.17.0.21:4730
+LS_COLORS=
+JOBSERVER_PORT=tcp://172.17.0.21:4730
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+PWD=/opt
+JOBSERVER_NAME=/supervisor/jobserver
+JOBSERVER_PORT_4730_TCP_PORT=4730
+SHLVL=1
+HOME=/root
+JOBSERVER_PORT_4730_TCP_PROTO=tcp
+LESSOPEN=| /usr/bin/lesspipe %s
+LESSCLOSE=/usr/bin/lesspipe %s %s
+_=/usr/bin/env
+```
+
+You can debug supervisord with commands like:
+```sh
+supervisorctl
+# stop all
+# start boss
+# ? for more commands
+```

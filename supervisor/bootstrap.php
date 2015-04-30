@@ -12,13 +12,12 @@ error_reporting(error_reporting() & ~E_NOTICE);
 
 require_once('vendor/autoload.php');
 
-use Sinergi\Gearman\BootstrapInterface;
-use Sinergi\Gearman\Application;
+use Sinergi\Gearman\Dispatcher;
+use Sinergi\Gearman\Config;
 
-class Bootstrap implements BootstrapInterface
-{
-    public function run(Application $application)
-    {
-        $application->add(new Job());
-    }
-}
+$gearman_server = getenv('JOBSERVER_PORT_4730_TCP_ADDR');
+
+$config = (new Config())->addServer($gearman_server, 4730);
+
+$dispatcher = new Dispatcher($config);
+$result = $dispatcher->background('CrawlJob', ['data' => 'value']);

@@ -3,5 +3,11 @@
     "description" : "Supervisor",
     "require": {
         "sinergi/gearman": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "ProjectRoot\\" : "",
+            "Crawler\\Supervisor\\": "code/"
+        }
     }
 }

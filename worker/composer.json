@@ -12,5 +12,11 @@
         "paquettg/php-html-parser": "dev-master",
         "stichoza/google-translate-php": "~2.0",
         "sinergi/gearman": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "ProjectRoot\\" : "",
+            "Crawler\\Worker\\": "code/"
+        }
     }
 }

@@ -1,4 +1,4 @@
-FROM phusion/baseimage:0.9.15
+FROM phusion/baseimage:0.9.16
 
 MAINTAINER moltar <moltar@moltar.net>
 # https://github.com/moltar/docker.gearmand
