@@ -29,15 +29,21 @@ sh start.sh
 
 #### Starting the containers manually
 1. Start Database
- - docker run -d -p 3306 --name database database
+	```sh
+	docker run -d -p 3306 --name database database
+	```
 2. Start Job Server
- - docker run -d -p 4730 -p 9001 --name jobserver jobserver
+	```sh
+	docker run -d -p 4730 -p 9001 --name jobserver jobserver
+ 	```
 3. Start Supervisor Server
- - docker run -d -P --name supervisor --link jobserver:jobserver --link database:database supervisor
+	```sh
+	docker run -d -P --name supervisor --link jobserver:jobserver --link database:database supervisor
+	```
 4. Start Workers
- - docker run -d -P --name worker --link jobserver:jobserver --link database:database worker
-
-
+	```sh
+	docker run -d -P --name worker --link jobserver:jobserver --link database:database worker
+	```
 
 
 -----------------
