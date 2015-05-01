@@ -5,9 +5,9 @@ To build this container:
 docker build -t jobserver .
 ```
 
-Run the container (standalone).
+Run the container (standalone). Expose standard port to host 4730 and web admin port of 9001.
 ```sh
-docker run -d -p 4730 --name jobserver jobserver
+docker run -d -p 4730 -p 9001 --name jobserver jobserver
 ```
 
 

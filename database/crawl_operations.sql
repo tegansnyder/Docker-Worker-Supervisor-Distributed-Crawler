@@ -40,7 +40,7 @@ LOCK TABLES `crawl_jobs` WRITE;
 
 INSERT INTO `crawl_jobs` (`id`, `domain_name`, `term`, `pattern`, `status`, `batch_id`)
 VALUES
-	(1,'qoo10.sg','test','a:6:{s:10:\"search_url\";s:393:\"http://list.qoo10.sg/s/?gdlc_cd=&gdmc_cd=&gdsc_cd=&delivery_group_no=&sell_cust_no=&bundle_delivery=&bundle_policy=&keywordArrLength=1&keyword=&within_keyword_auto_change=&keyword_hist=[[CRAWL_SEARCH_TERM]]&hidden_div_height=69&curPage=&filterDelivery=NNNNNNNN&flt_pri_idx=0&flt_tab_idx=0&sortType=SORT_RANK_POINT&dispType=LIST&pageSize=60&partial=off&paging_value=[[CRAWL_SEARCH_PAGE_NUMBER]]\";s:4:\"type\";s:25:\"PAGINATED_SEARCH_MAX_PAGE\";s:8:\"max_page\";i:276;s:7:\"wrapper\";s:16:\".bd_lst dd tbody\";s:4:\"item\";s:22:\"td.details p.subject a\";s:6:\"seller\";s:16:\"td.seller a.name\";}','ready',1);
+  (1, 'qoo10.sg', 'test', 'a:6:{s:10:\"search_url\";s:456:\"http://list.qoo10.sg/s/?gdlc_cd=&gdmc_cd=&gdsc_cd=&delivery_group_no=&sell_cust_no=&bundle_delivery=&bundle_policy=&keywordArrLength=1&keyword=&within_keyword_auto_change=&keyword_hist=[[CRAWL_SEARCH_TERM]]&hidden_div_height=69&curPage=[[CRAWL_SEARCH_PAGE_NUMBER]]&filterDelivery=NNNNNNNN&flt_pri_idx=0&flt_tab_idx=0&sortType=SORT_RANK_POINT&dispType=LIST&pageSize=60&partial=off&[[CRAWL_EXTRA_RULED_PARAM:paging_value|SUBTRACT:CRAWL_SEARCH_PAGE_NUMBER:1]]\";s:4:\"type\";s:25:\"PAGINATED_SEARCH_MAX_PAGE\";s:8:\"max_page\";i:276;s:7:\"wrapper\";s:16:\".bd_lst dd tbody\";s:4:\"item\";s:22:\"td.details p.subject a\";s:6:\"seller\";s:16:\"td.seller a.name\";}', 'ready', 1);
 
 /*!40000 ALTER TABLE `crawl_jobs` ENABLE KEYS */;
 UNLOCK TABLES;

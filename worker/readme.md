@@ -10,8 +10,8 @@ Run the container:
 ```sh
 # docker run -it --rm --name worker worker php worker.php
 
-# this container is linked to the jobserver
-docker run -d -P --name worker --link jobserver:jobserver worker
+# this container is linked to the jobserver and database
+docker run -d -P --name worker --link jobserver:jobserver --link database:database worker
 
 ``
 

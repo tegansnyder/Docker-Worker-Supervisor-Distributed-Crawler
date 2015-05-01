@@ -38,26 +38,16 @@ As of right now this is an attempt at creating a microservices based crawling op
 
 1. Start Database
 2. Start Job Server
- - docker run -d -p 4730 --name jobserver jobserver
+ - docker run -d -p 4730 -p 9001 --name jobserver jobserver
 3. Start Supervisor Server
  - docker run -d -P --name supervisor --link jobserver:jobserver --link database:database supervisor
 4. Start Workers
- - docker run -d -P --name worker --link jobserver:jobserver worker
+ - docker run -d -P --name worker --link jobserver:jobserver --link database:database worker
 
 
+There is an automated way of doing this in the `start.sh` script:
 ```sh
-cd ~/Dev/gits/DockerCrawler
-cd database
-docker run -d -p 3306 --name database database
-cd ../
-cd jobserver
-docker run -d -p 4730 --name jobserver jobserver
-cd ../
-cd supervisor
-docker run -d -P --name supervisor --link jobserver:jobserver --link database:database supervisor
-cd ../
-cd worker
-docker run -d -P --name worker --link jobserver:jobserver worker
+sh start.sh
 ```
 
 

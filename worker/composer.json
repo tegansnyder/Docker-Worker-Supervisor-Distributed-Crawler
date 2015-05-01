@@ -1,17 +1,22 @@
 {
     "name" : "worker/crawler",
     "description" : "Worker Crawler",
+    "minimum-stability": "dev",
     "repositories": [
         {
             "type": "git",
-            "url": "https://github.com/veqryn/curl"
+            "url": "https://github.com/tegansnyder/curl"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/tegansnyder/php-html-parser"
         }
     ],
     "require": {
-        "veqryn/curl": "*",
-        "paquettg/php-html-parser": "dev-master",
-        "stichoza/google-translate-php": "~2.0",
-        "sinergi/gearman": "dev-master"
+        "tegansnyder/curl": "dev-tegan",
+        "tegansnyder/php-html-parser": "dev-tegan",
+        "sinergi/gearman": "dev-master",
+        "j4mie/idiorm": "1.5.1"
     },
     "autoload": {
         "psr-4": {
