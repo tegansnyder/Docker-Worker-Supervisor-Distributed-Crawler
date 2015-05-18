@@ -5,10 +5,24 @@ To build this container:
 docker build -t jobserver .
 ```
 
-Run the container (standalone). Expose standard port to host 4730 and web admin port of 9001.
+Run the container (standalone). Expose standard port to host 4730.
 ```sh
-docker run -d -p 4730 -p 9001 --name jobserver jobserver
+docker run -d -p 4730 --name jobserver jobserver
+
+# more than likely you will start the container and have it linked to redis (queuestore) container like this:
+
+docker run -d -P --name jobserver --link queuestore:queuestore jobserver
+
+
 ```
+
+@todo - figure out how to get redis setup as queuestore:
+
+
+/usr/sbin/gearmand --log-file=stderr --user=gearman -q redis --redis-server=localhost --redis-port=6379
+
+--config-file arg (=/etc/gearmand.conf)
+
 
 
 ### To get all of the command line options:

@@ -1,5 +1,5 @@
 ## Preface
-Please note this repositiory contains my experiment in building micro-services based web crawling operation using docker containers. It currently is not suitable for any production use and should only be viewed as skeleton template.
+Please note this repositiory contains my experiment in building micro-services based web crawling operation using docker containers. It currently is not suitable for any production use and should only be viewed as skeleton template. My goal is to familarize myself with building a small micro services for web crawling.
 
 ## What this is?
 This is a example of creating a worker supervisor architecture to crawl the web using docker containers. I'm taking some inspiration from an article found [here](http://blog.semantics3.com/how-we-built-our-almost-distributed-web-crawler/). This repository consists of a few different micro services running as docker containers. These docker containers are listed below:
@@ -33,17 +33,22 @@ sh start.sh
 	```sh
 	docker run -d -p 3306 --name database database
 	```
-2. Start Job Server
+2. Start Queue Store (Redis)
 
 	```sh
-	docker run -d -p 4730 -p 9001 --name jobserver jobserver
- 	```
-3. Start Supervisor Server
-
-	```sh
-	docker run -d -P --name supervisor --link jobserver:jobserver --link database:database supervisor
+	docker run -d -p 6379 --name queuestore queuestore
 	```
-4. Start Workers
+3. Start Job Server
+
+	```sh
+	docker run -d -p 4730 --name jobserver --link queuestore:queuestore jobserver 
+ 	```
+4. Start Supervisor Server
+
+	```sh
+	docker run -d -P --name supervisor --link jobserver:jobserver --link database:database --link queuestore:queuestore supervisor
+	```
+5. Start Workers
 
 	```sh
 	docker run -d -P --name worker --link jobserver:jobserver --link database:database worker

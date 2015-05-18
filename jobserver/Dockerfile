@@ -3,7 +3,8 @@ FROM phusion/baseimage:0.9.16
 MAINTAINER moltar <moltar@moltar.net>
 # https://github.com/moltar/docker.gearmand
 
-EXPOSE 4730
+# Setup docker defaults
+WORKDIR /opt
 
 RUN apt-get update -qq && \
     apt-get install -y gcc make g++ libboost-all-dev gperf libevent-dev \
@@ -36,4 +37,9 @@ RUN apt-get update -qq && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-ENTRYPOINT ["/sbin/my_init", "--", "/usr/sbin/gearmand", "--log-file=stderr", "--user=gearman"]
+# add startup init script
+ADD init.sh /opt/init.sh
+
+EXPOSE 4730
+
+ENTRYPOINT ["/sbin/my_init", "--", "/opt/init.sh"]

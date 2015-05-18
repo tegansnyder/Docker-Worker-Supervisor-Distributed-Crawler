@@ -1,0 +1,1 @@
+sh /usr/sbin/gearmand --log-file=stderr --user=gearman

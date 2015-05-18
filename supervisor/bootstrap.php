@@ -188,14 +188,15 @@ foreach ($crawl_jobs as $row) {
 					if ($processed != $records_done) {
 						$records_done = $processed;
 						echo 'PROCESSED ' . $records_done . ' of ' . $total . PHP_EOL;
+					} else {
+
+						echo 'COMPLETE PG #' . $pg . ' OF IN-STORE SEARCH' . PHP_EOL;
+
 					}
 
 					usleep(50000);
 
 				} while(true);
-
-
-				echo 'COMPLETE PG #' . $pg ' OF IN-STORE SEARCH' . PHP_EOL;
 
             }
 
