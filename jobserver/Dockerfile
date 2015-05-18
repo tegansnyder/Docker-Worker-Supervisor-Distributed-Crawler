@@ -38,8 +38,8 @@ RUN apt-get update -qq && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # add startup init script
-ADD init.sh /opt/init.sh
+RUN mkdir -p /etc/my_init.d
+ADD gearman_startup.sh /etc/my_init.d/gearman_startup.sh
+RUN chmod +x /etc/my_init.d/gearman_startup.sh
 
 EXPOSE 4730
-
-ENTRYPOINT ["/sbin/my_init", "--", "/opt/init.sh"]
