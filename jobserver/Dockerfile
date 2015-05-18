@@ -19,7 +19,7 @@ RUN apt-get update -qq && \
     make && \
     make install && \
     mkdir /tmp/gearman && \
-    curl -L --insecure --silent https://launchpad.net/gearmand/1.2/1.1.12/+download/gearmand-1.1.12.tar.gz \
+    curl -L --insecure --silent https://github.com/tegansnyder/gearmand-1.1.12-patched-for-redis/archive/1.12.12_redis_patched.tar.gz \
         | tar -xz --strip 1 -C /tmp/gearman && \
     cd /tmp/gearman && \
     ./configure \

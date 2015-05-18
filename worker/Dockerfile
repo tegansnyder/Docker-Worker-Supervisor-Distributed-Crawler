@@ -4,6 +4,8 @@ MAINTAINER Tegan Snyder <tsnyder@tegdesign.com>
 # Setup docker defaults
 WORKDIR /opt
 
+COPY start_worker.sh /opt/
+
 # Enable PHP 5.6 repo and update apt-get
 RUN echo "deb http://ppa.launchpad.net/ondrej/php5-5.6/ubuntu trusty main" >> /etc/apt/sources.list && \
     apt-key adv --keyserver keyserver.ubuntu.com --recv-key E5267A6C && \
